@@ -1,9 +1,7 @@
-body.dark {
+body {
     background-color: rgb(29, 29, 29);
     color: #fff;
     font-family: 'Red Hat Display', sans-serif;
-    margin-left: 5vw;
-    margin-right: 5vw;
 }
 
 a {
@@ -87,16 +85,11 @@ svg.move {
     }
 }
 
-div#header {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
-    left: 30;
-    right: 30;
-}
-
 h1#title {
+    margin-top: 15vh;
     text-align: center;
-    font-size: 15vw;
+    font-size: 12vw;
+    width: 100vw;
 }
 
 div.carousel-caption {
