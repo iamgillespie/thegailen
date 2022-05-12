@@ -2,6 +2,7 @@ body {
     background-color: rgb(29, 29, 29);
     color: #fff;
     font-family: 'Red Hat Display', sans-serif;
+    overflow-x: hidden;
 }
 
 a {
