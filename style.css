@@ -1,0 +1,111 @@
+body.dark {
+    background-color: rgb(29, 29, 29);
+    color: #fff;
+    font-family: 'Red Hat Display', sans-serif;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+a {
+    color: rgb(176, 210, 211);
+    text-decoration: none;
+}
+
+a:hover {
+    color: #fff;
+}
+
+#bulb-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    text-align: center;
+}
+
+svg#bulb {
+    height: 50vh;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 35px;
+    filter: drop-shadow( 1px 1px 40px rgb(217, 255, 0));
+}
+
+@media only screen and (max-width: 600px) {
+    svg#bulb {
+      height: 25vh;
+    }
+  }
+
+svg.move {
+    animation: bulb ease 4s;
+    transform-origin: top;
+}
+
+ @keyframes bulb {
+    0%{
+        transform: rotateZ(0deg);
+        filter: brightness(.5);
+    }
+    5%{
+        transform: rotateZ(40deg);
+        filter: brightness(1.4);
+    }
+    20%{
+        transform: rotateZ(-22deg);
+        filter: brightness(1.4);
+    }
+    40%{
+        transform: rotateZ(10deg);
+        filter: brightness(.6);
+    }
+    60%{
+        transform: rotateZ(-10deg);
+        filter: brightness(.4);
+    }
+    80%{
+        transform: rotateZ(4deg);
+        filter: brightness(1.6);
+    }
+    90%{
+        transform: rotateZ(-1deg);
+        filter: brightness(.6);
+    }
+    93%{
+        transform: rotateZ(0deg);
+        filter: brightness(.3);
+    }
+    95%{
+        filter: brightness(1.2);
+    }
+    98%{
+        filter: brightness(.4);
+    }
+    100% {
+        filter: brightness(1);
+    }
+}
+
+div#header {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    left: 30;
+    right: 30;
+}
+
+h1#title {
+    text-align: center;
+    font-size: 15vw;
+}
+
+div.carousel-caption {
+    background-color: #00000070;
+    padding: 50px;
+}
+div.carousel-caption:hover {
+    background-color: #00000090;
+}
+#carimg {
+    border: 25px solid #fff;
+}
