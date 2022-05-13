@@ -5,11 +5,17 @@ body {
     overflow-x: hidden;
 }
 
+/*dark mode switch */
 .lightswitch {
     background-color: rgb(255, 255, 255);
     color: rgb(0, 0, 0);
     font-family: 'Red Hat Display', sans-serif;
     overflow-x: hidden;
+}
+
+section {
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 a {
@@ -59,7 +65,7 @@ section {
 /* LIGHT BULB STUFF*/
 
 #bulb-container {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 25vw;
     right: 0;
@@ -72,7 +78,7 @@ svg#bulb {
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 35px;
-    filter: drop-shadow(1px 1px 40px rgb(217, 255, 0));
+    filter: drop-shadow(1px 1px 150px rgb(255, 254, 219));
 }
 
 @media only screen and (max-width: 600px) {
@@ -138,4 +144,15 @@ svg.move {
     100% {
         filter: brightness(1);
     }
+}
+
+
+/*skills svg images*/
+img.svg {
+    width: 12vw;
+}
+
+/*portfolio images*/
+img#portimg {
+    width: 40vw;
 }

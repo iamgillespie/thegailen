@@ -62,7 +62,7 @@
 
           setTimeout(function () {
             $('#bulb').removeClass('move')
-          }, 5000)
+          }, 4000)
         })
       })
     </script>
@@ -71,12 +71,12 @@
   <body>
     <div id="header">
       <h1 id="title">GAILEN.ME</h1>
-      <h3 id="subtitle">FULL STACK DEVELOPER</h3>
+      <h3 id="subtitle" class="text-muted">FULL STACK DEVELOPER</h3>
     </div>
-    
+
     <!--SVG LIGHTBULB ANIMATION AND LIGHTMODE-->
     <div id="bulb-container">
-      <a href="javascript:void(0);" onclick="myFunction()">
+      
         <svg
           id="bulb"
           width="300"
@@ -84,7 +84,7 @@
           viewBox="0 0 300 828"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-        >
+        ><a href="javascript:void(0);" onclick="myFunction()">
           <g id="space">
             <path
               d="M223.94 648.381C223.698 647.854 223.487 647.313 223.31 646.761C222.463 643.664 222.374 640.409 223.05 637.271C223.465 635.658 224.396 634.226 225.702 633.193C227.008 632.16 228.616 631.583 230.28 631.551C232.22 631.491 233.16 632.321 233.46 634.251C233.673 635.568 233.577 636.917 233.18 638.191C232.355 640.763 230.868 643.073 228.87 644.891C227.395 646.275 225.736 647.449 223.94 648.381Z"
@@ -150,8 +150,9 @@
     <!--about me-->
     <section id="aboutme">
       <div class="container-fluid w-75">
-        <h1>About me</h1>
-        <p>
+        <h1 class="text-center">About me</h1>
+        <h4 class="text-muted mx-5 mt-5">Creative</h4>
+        <p class="text-muted">
           I'm creative, imaginative and slightly eccentric. I've spent my entire
           life creating. That has taken on forms such as writing and producing
           music, to building and modifying electronics. The passion that has
@@ -160,15 +161,54 @@
           love nothing more than to dive in an obsess over a challenge that
           engages the creative parts of my mind.
         </p>
-        <p class="text-end mt-5">
-          <i>Let's get in touch. I'm looking forward to my next challenge.</i>
+        <h4 class="text-muted mx-5 mt-5">Plays well with others</h4>
+        <p class="text-muted">I'm looking forward to the opportunity to work within a team environment. I highly value the collaborative environment that a the right team creates and how it sharpens the skills of all involved.</p>
+        <h4 class="text-muted mx-5 mt-5">Self motivaed</h4>
+        <p class="text-muted">I also function well independently. I have had many an instance where I have had to self-teach and I beleive the ability to research is of utmost importance.</p>
+        <div class="text-end">
+        <p class="mt-5">
+          Let's get in touch.
           <br />
-          my contact information and resume are located below
-          <i class="bi bi-arrow-down-circle"></i>
+
+            <a href="#footer">
+          My contact info and resume are at the footer below.
+          <br />
+          <i class="bi bi-arrow-down-circle fs-1"></i>
+          <i class="bi bi-arrow-down-circle fs-1"></i>
+          <i class="bi bi-arrow-down-circle fs-1"></i>
+          </a>
+        </div>
         </p>
       </div>
     </section>
 
+    <!--BILL PAYIN SKILLZ-->
+    <section id="skills">
+      <div class="container-fluid w-75 mt-5">
+        <div class="row">
+          <h1>Skillset</h1>
+          <p class="text-muted">What I've been developing with</p>
+        </div>
+        <div class="justify-content-between mx-auto py-3 w-auto row">
+          <img class="svg" src="./images/python.svg" alt="python" />
+
+          <img class="svg" src="./images/flask.svg" alt="flask" />
+
+          <img
+            class="svg"
+            src="./images/bootstrap-brands.svg"
+            alt="bootstrap"
+          />
+          </div>
+          <div class="justify-content-between mx-auto py-3 w-auto row">
+          <img class="svg" src="./images/css3.svg" alt="css" />
+
+          <img class="svg" src="./images/html5.svg" alt="html" />
+
+          <img class="svg" src="./images/javascript.svg" alt="javascript" />
+        </div>
+      </div>
+    </section>
     <!--cards-->
     <section id="portfolio">
       <div class="container-fluid w-75">
@@ -183,7 +223,7 @@
               <img
                 src="./images/blankc.jpg"
                 alt="blankc guitars"
-                class="img-thumbnail"
+                id="portimg"
               />
               <h4>
                 BLANKC GUITARS
@@ -192,8 +232,8 @@
           </div>
           <div class="col" id="modal">
             <a href="#" data-bs-toggle="modal" data-bs-target="#immer">
+              <img src="./images/immer.jpg" alt="immer" id="portimg" />
               <h4>IMMER</h4>
-              <img src="./images/immer.jpg" alt="immer" class="img-thumbnail" />
             </a>
           </div>
           <div class="col" id="modal">
@@ -201,7 +241,7 @@
               <img
                 src="./images/blackcatvinyl.jpg"
                 alt="black cat vinyl"
-                class="img-thumbnail"
+                id="portimg"
               />
               <h4>BLACK CAT VINYL</h4>
             </a>
