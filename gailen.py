@@ -34,5 +34,4 @@ def showthethings(*args):
 
     name.clear()
    
-
 button.element.onclick = showthethings
