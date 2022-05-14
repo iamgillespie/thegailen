@@ -5,21 +5,24 @@ from js import console
 ### TODO - BUILD CONTACT FORM AND BLOG USING PYSCRIPT
 
 #introduce tags to python
-    #<input type="text" id="pyinput" class="form-control" placeholder="Enter some text">
-pyinput = Element('pyinput')
-    #<button type="button" class="btn btn-light" id="submit">Submit</button>
+    #variable = Element('tag-id')
+name = Element('name')
+email = Element('email')
+message = Element('message')
 button = Element('submit')
     #<div class="pydiv">
 div = Element('pydiv')
 
 def showthethings(*args):
     #console.log('button was clicked')
-    output = pyinput.element.value
+    nameout = name.element.value
+    emailout = email.element.value
+    messageout = message.element.value
     newthing = create("p", classes='output text-center')
-    newthing.element.innerText = output
+    newthing.element.innerText = nameout + ' ' + emailout + ' ' + messageout
     div.element.appendChild(newthing.element)
 
-    pyinput.clear()
+    name.clear()
    
 
 button.element.onclick = showthethings
