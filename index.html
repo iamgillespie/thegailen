@@ -39,6 +39,7 @@
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+
     <!--modal-->
     <script>
       var myModal = document.getElementById('myModal')
@@ -54,7 +55,8 @@
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
     <link rel="stylesheet" href="./style.css" />
 
-    <!-- toggle bulb classes -->
+    <!-- toggle classes -->
+    <!-- BULB -->
     <script>
       $(document).ready(function () {
         $('#bulb').click(function () {
@@ -62,21 +64,28 @@
 
           setTimeout(function () {
             $('#bulb').removeClass('move')
-          }, 4000)
+          }, 5000)
         })
       })
     </script>
-
+    <!-- FLOATING CONTACT ICON -->
+    <script>
+      $(document).ready(function () {
+        $('#contact').scroll(function () {
+          $('#contact').addClass('display')
+        })
+      })
+    </script>
     <!--pyscript-->
     <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
+
   </head>
 
-  <body>
+  <body> 
     <div id="header">
       <h1 id="title">GAILEN.ME</h1>
       <h3 id="subtitle" class="text-muted">FULL STACK DEVELOPER</h3>
     </div>
-
     <!--SVG LIGHTBULB ANIMATION AND LIGHTMODE-->
     <div id="bulb-container">
       
@@ -150,6 +159,78 @@
       </a>
     </div>
 
+    <!--footer / sticky header-->
+
+      <footer class="d-flex flex-wrap justify-content-between mt-3 sticky-lg-top" id="footer">
+        <ul
+          class="nav col-md-4 justify-content-evenly list-unstyled d-flex w-100 text-start py-3"
+        >
+          <li>
+            <div class="pop-wrapper">
+            <a href="#" data-bs-toggle="modal" data-bs-target="#contact" class="text-warning">
+              <div class="pop-content">
+                <p class="pop-message">
+                  contact
+                </p>
+            </div>
+              <i class="bi bi-send fs-2" id="icon">
+              </i>
+            </a>
+            </div>
+          </li>
+          <li>
+            <div class="pop-wrapper">
+            <a href="https://www.linkedin.com/in/gailengillespie/">
+              <div class="pop-content">
+                <p class="pop-message">
+                  linkedin
+                </p>
+              </div>
+              <i class="bi bi-linkedin fs-2" id="icon"></i>
+            </a>
+        </div>
+          </li>
+          <li>
+            <div class="pop-wrapper">
+            <a href="https://github.com/iamgillespie" target="_blank">
+              <div class="pop-content">
+                <p class="pop-message">
+                  github
+                </p>
+              </div>
+              <i class="bi bi-github fs-2" id="icon"></i>
+            </a>
+          </div>
+          </li>
+          <li>
+            <div class="pop-wrapper">
+            <a href="https://twitter.com/thegailen/" target="_blank">
+              <div class="pop-content">
+                <p class="pop-message">
+                  twitter
+                </p>
+                </div>
+            <i class="bi bi-twitter fs-2" id="icon"></i>
+            </a>
+            </div>
+          </li>
+          <li>
+            <div class="pop-wrapper">
+            <a href="./resume.html">
+              <div class="pop-content">
+                <p class="pop-message">
+                  resume
+                </p>
+                </div>
+            <i class="bi bi-filetype-pdf fs-2" id="icon"></i>
+            </a>
+            </div>
+          </li>
+        </ul>
+      </footer>
+
+
+
     <!--about me-->
     <section id="aboutme">
       <div class="container-fluid w-75">
@@ -166,22 +247,9 @@
         </p>
         <h4 class="text-muted mx-5 mt-5">Plays well with others</h4>
         <p class="text-muted">I'm looking forward to the opportunity to work within a team environment. I highly value the collaborative environment that a the right team creates and how it sharpens the skills of all involved.</p>
-        <h4 class="text-muted mx-5 mt-5">Self motivaed</h4>
-        <p class="text-muted">I also function well independently. I have had many an instance where I have had to self-teach and I beleive the ability to research is of utmost importance.</p>
+        <h4 class="text-muted mx-5 mt-5">Self motivated</h4>
+        <p class="text-muted">I also function well independently. I have had many an instance where I have had to self-teach and I beleive the ability to research is a crucial ability for any developer.</p>
         <div class="text-end">
-        <p class="mt-5">
-          Let's get in touch.
-          <br />
-
-            <a href="#footer">
-          My contact info and resume are at the footer below.
-          <br />
-          <i class="bi bi-arrow-down-circle fs-1"></i>
-          <i class="bi bi-arrow-down-circle fs-1"></i>
-          <i class="bi bi-arrow-down-circle fs-1"></i>
-          </a>
-        </div>
-        </p>
       </div>
     </section>
 
@@ -189,8 +257,8 @@
     <section id="skills">
       <div class="container-fluid w-75 mt-5">
         <div class="row">
-          <h1>Skillset</h1>
-          <p class="text-muted">What I've been developing with</p>
+          <h1 class="text-center">Skillset</h1>
+          <p class="text-muted text-center">What I've been developing with</p>
         </div>
         <div class="justify-content-between mx-auto py-3 w-auto row">
           <img class="svg" src="./images/python.svg" alt="python" />
@@ -212,9 +280,10 @@
         </div>
       </div>
     </section>
+
     <!--cards-->
     <section id="portfolio">
-      <div class="container-fluid w-75">
+      <div class="container-fluid w-100">
         <div class="row mb-5">
           <h1 class="text-center">
             Clients and projects
@@ -424,15 +493,52 @@
       </div>
     </div>
 
-<!--PYSCRIPT STUFF
-<section id="pyscript" class="px-5 my-5">
+    <div
+    class="modal fade text-muted"
+    id="contact"
+    data-bs-backdrop="static"
+    data-bs-keyboard="false"
+    tabindex="-1"
+    aria-labelledby="contactLabel"
+    aria-hidden="true"
+  >
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="contactLabel">CONTACT</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="modal"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="modal-body">
+<!--PYSCRIPT CONTACT FORM-->
 <div id="pydiv">
-<input type="text" id="name" class="form-control" placeholder="name">
-<input type="email" id="email" class="form-control" placeholder="email">
-<textarea name="message" id="message" class="form-control" rows="5"></textarea>
-<button type="button" class="btn btn-light" id="submit">Submit</button>
+<input required type="text" id="name" class="form-control" placeholder="name"><br>
+<input required type="email" id="email" class="form-control" placeholder="email"><br>
+<input type="tel" id="phone" class="form-control" placeholder="phone (optional)"><br>
+<textarea name="message" id="message" class="form-control" rows="5" placeholder="message"></textarea><br>
+        </div>
+        <div class="modal-footer d-flex justify-content-between">
+          <span class="">
+          <a href="tel:8164018539">
+            <i class="bi bi-telephone fs-2 mx-3"></i>
+          </a>
+          <a href="mailto:gailen.gillespie@gmail.com">
+            <i class="bi bi-envelope fs-2 mx-3"></i>
+          </a>
+        </span>
+          <button type="button" class="btn btn-outline-primary mx-3" id="submit">
+            Send
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
 
-
+  <section id="pyscript" class="px-5 my-5">
 </div>
     <h4 class="mx-5 mt-5 text-light">
       <py-script src="./gailen.py">
@@ -441,33 +547,5 @@
     </h4>
 
 </section>
--->
-    <!--footer-->
-    <div class="container absolute-bottom" id="footer">
-      <footer class="d-flex flex-wrap justify-content-between mt-3 border-top">
-        <ul
-          class="nav col-md-4 justify-content-evenly list-unstyled d-flex w-100 text-start py-3"
-        >
-          <li>
-            <a href="mailto:gailen.gillespie@gmail.com">
-              <i class="bi bi-envelope fs-2"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://www.linkedin.com/in/gailengillespie/">
-              <i class="bi bi-linkedin fs-2"></i>
-            </a>
-          </li>
-          <li>
-            <a href="https://github.com/iamgillespie" target="_blank">
-              <i class="bi bi-github fs-2"></i>
-            </a>
-          </li>
-          <li>
-            <i class="bi bi-file-person fs-2"></i>
-          </li>
-        </ul>
-      </footer>
-    </div>
   </body>
 </html>
