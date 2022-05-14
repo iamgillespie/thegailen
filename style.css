@@ -45,9 +45,11 @@ h3#subtitle {
 
 div#header {
     width: 100vw;
+    height: 50vh;
 }
 
 div#modal {
+    margin-bottom: 5vh;
     transition: transform ease-in-out 300ms;
 }
 
@@ -57,7 +59,6 @@ div#modal:hover {
 
 section {
     margin-top: 150px;
-    margin-bottom: 150px;
     margin-left: 10vw;
     margin-right: 10vw;
 }
@@ -78,17 +79,11 @@ svg#bulb {
     padding-left: 35px;
     padding-right: 35px;
     padding-bottom: 35px;
-    filter: drop-shadow(1px 1px 150px rgb(255, 254, 219));
-}
-
-@media only screen and (max-width: 600px) {
-    svg#bulb {
-        height: 25vh;
-    }
+    filter: drop-shadow(1px 1px 80px rgb(255, 254, 219));
 }
 
 svg.move {
-    animation: bulb ease 4s;
+    animation: bulb 4s;
     transform-origin: top;
 }
 
@@ -155,4 +150,64 @@ img.svg {
 /*portfolio images*/
 img#portimg {
     width: 40vw;
+    right: 0;
 }
+
+footer {
+    background-color: inherit;
+}
+
+@media only screen and (max-width: 820px) {
+    svg#bulb {
+        height: 35vh;
+        margin-top: 0vh;
+    }
+    h3#subtitle{
+        font-size: medium;
+        text-align: center;
+        width: 100vw;
+    }
+    section {
+        margin-top: 150px;
+        margin-bottom: 20vh;
+        margin-left: 0vw;
+        margin-right: 0vw;
+    }
+    div#header {
+        width: auto;
+        height: auto;
+        margin-bottom: 35vh;
+    }
+    footer {
+        top: 0;
+        position: sticky;
+        width: 100vw;
+    }
+  }
+  .pop-wrapper {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+  }
+
+  .pop-content {
+    opacity: 0;
+    visibility: hidden;
+    position: relative;
+    padding: 0;
+    margin: 0;
+  }
+  .pop-content:before {
+    transition-duration: 0.3s;
+    transition-property: transform;
+  }
+  .pop-wrapper:hover .pop-content {
+    opacity: 1;
+    visibility: visible;
+    transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
+  }
+  .pop-message {
+    text-align: center;
+  }
+
+  @keyframes #icon:hover
