@@ -36,7 +36,6 @@ def getthethings(*args):
     div.element.appendChild(messageinfo.element)
 
     con = sql.connect('gailen.db')
-    con.row_factory = sql.Row
     cur = con.cursor()
 
     con.execute('INSERT INTO msgs (name, email, phone, message, timestamp) VALUES (?, ?, ?, ?, ?)', (nameout, emailout, phoneout, messageout, timestamp))
