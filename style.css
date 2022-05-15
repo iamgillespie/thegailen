@@ -42,13 +42,6 @@ h3#subtitle {
     margin-top: 0;
 }
 
-p#fineprint {
-    opacity: .5;
-    text-align: center;
-    padding-top: 0;
-    margin-top: 0;
-    font-size: small;
-}
 
 div#header {
     width: 100vw;
