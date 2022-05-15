@@ -1,4 +1,6 @@
 from js import console
+import sqlite3 as sql
+from datetime import datetime
 
 ### REFERENCE VIDEO https://www.youtube.com/watch?v=7meW2djIUYk&t=4s
 
@@ -14,8 +16,9 @@ button = Element('submit')
     #<div class="pydiv">
 div = Element('pydiv')
 
-def showthethings(*args):
+def getthethings(*args):
     #console.log('button was clicked')
+    timestamp = datetime.timestamp(datetime.now())
     nameout = name.element.value
     emailout = email.element.value
     phoneout = phone.element.value
@@ -32,6 +35,16 @@ def showthethings(*args):
     messageinfo.element.innerText = 'Message: ' '\n' + messageout
     div.element.appendChild(messageinfo.element)
 
+    con = sql.connect('gailen.db')
+    con.row_factory = sql.Row
+    cur = con.cursor()
+
+    con.execute('INSERT INTO msgs (name, email, phone, message, timestamp) VALUES (?, ?, ?, ?, ?)', (nameout, emailout, phoneout, messageout, timestamp))
+    con.commit()
+
     name.clear()
+    email.clear()
+    phone.clear()
+    message.clear()
    
-button.element.onclick = showthethings
+button.element.onclick = getthethings

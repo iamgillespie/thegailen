@@ -85,6 +85,7 @@
     <div id="header">
       <h1 id="title">GAILEN.ME</h1>
       <h3 id="subtitle" class="text-muted">FULL STACK DEVELOPER</h3>
+      <p id="fineprint">please don't click on the lightbulb</p>
     </div>
     <!--SVG LIGHTBULB ANIMATION AND LIGHTMODE-->
     <div id="bulb-container">
@@ -519,7 +520,7 @@
 <input required type="text" id="name" class="form-control" placeholder="name"><br>
 <input required type="email" id="email" class="form-control" placeholder="email"><br>
 <input type="tel" id="phone" class="form-control" placeholder="phone (optional)"><br>
-<textarea name="message" id="message" class="form-control" rows="5" placeholder="message"></textarea><br>
+<textarea required name="message" id="message" class="form-control" rows="5" placeholder="message"></textarea><br>
         </div>
         <div class="modal-footer d-flex justify-content-between">
           <span class="">
@@ -537,10 +538,11 @@
       </div>
     </div>
   </div>
-
-  <section id="pyscript" class="px-5 my-5">
 </div>
+  <section id="pyscript" class="px-5 my-5">
+
     <h4 class="mx-5 mt-5 text-light">
+
       <py-script src="./gailen.py">
 
       </py-script>
