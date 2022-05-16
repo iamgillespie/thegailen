@@ -52,14 +52,7 @@
       })
     })
   </script>
-  <!-- FLOATING CONTACT ICON -->
-  <script>
-    $(document).ready(function () {
-      $('#contact').scroll(function () {
-        $('#contact').addClass('display')
-      })
-    })
-  </script>
+
   <!--pyscript-->
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
 </head>
@@ -189,24 +182,16 @@
         </h1>
       </div>
       <div class="justify-content-evenly mx-auto py-3 w-auto row">
-
         <img class="svg" id='skillicon' src="./images/python.svg" alt="python" />
-
         <img class="svg" id='skillicon' src="./images/bootstrap-brands.svg" alt="bootstrap" />
         <img class="svg" id='skillicon' src="./images/sqlite-icon.svg" alt="sqlite">
-
         <img class="svg" id='skillicon' src="./images/css3.svg" alt="css" />
-
         <img class="svg" id='skillicon' src="./images/html5.svg" alt="html" />
-
         <img class="svg" id='skillicon' src="./images/javascript.svg" alt="javascript" />
-
         <img class="svg" id='skillicon' src="./images/flask.svg" alt="flask" />
       </div>
     </div>
     </div>
-
-
   </section>
 
   <!--cards-->
@@ -221,21 +206,21 @@
         <div class="col" id="modal">
           <a href="#" data-bs-toggle="modal" data-bs-target="#blankc">
             <img src="./images/blankc.jpg" alt="blankc guitars" id="portimg" />
-            <p>
+            <h5>
               BLANKC GUITARS
-            </p>
+            </h5>
           </a>
         </div>
         <div class="col" id="modal">
           <a href="#" data-bs-toggle="modal" data-bs-target="#immer">
             <img src="./images/immer.jpg" alt="immer" id="portimg" />
-            <p>IMMER</p>
+            <h5>IMMER</h5>
           </a>
         </div>
         <div class="col" id="modal">
           <a href="#" data-bs-toggle="modal" data-bs-target="#blackcat">
             <img src="./images/blackcatvinyl.jpg" alt="black cat vinyl" id="portimg" />
-            <p>BLACK CAT VINYL</p>
+            <h5>BLACK CAT VINYL</h5>
           </a>
         </div>
       </div>
@@ -353,29 +338,30 @@
     </div>
   </div>
 
- <!--about me-->
- <section id="aboutme" class="mb-5">
-  <div class="container-fluid w-75">
-    <h1 class="text-center" id="about">About me</h1>
-    <h4 class="mx-5 my-3 py-3 text-end" id="about">Creative</h4>
-    <p id="about">
-      I'm imaginative and mildly eccentric. I've spent much of my
-      life creating. That has taken on forms such as writing and producing
-      music, to building and modifying electronics. The passion that has
-      wrapped up my attention for countless hours in those endevours gives
-      me the same gratification as when I am developing and writing code. I
-      love nothing more than to dive in an obsess over a challenge that
-      engages the creative parts of my mind.
-    </p>
-    <h4 class="mx-5 my-3 py-3 text-end" id="about">Plays well with others</h4>
-    <p id="about">I'm looking forward to the opportunity to work within a team environment. I highly
-      value the collaborative environment that a the right team creates and how it sharpens the skills of all
-      involved.</p>
-    <h4 class="mx-5 my-3 py-3 text-end" id="about">Self motivated</h4>
-    <p id="about">I function well in both a team and independent environment. When we don't have the answers we need to know how to find them.</p>
-    <div class="text-end">
-    </div>
-</section>
+  <!--about me-->
+  <section id="aboutme" class="mb-5">
+    <div class="container-fluid w-75">
+      <h1 class="text-center" id="about">About me</h1>
+      <h4 class="mx-5 my-3 py-3 text-end" id="about">Creative</h4>
+      <p id="about">
+        I'm imaginative and mildly eccentric. I've spent much of my
+        life creating. That has taken on forms such as writing and producing
+        music, to building and modifying electronics. The passion that has
+        wrapped up my attention for countless hours in those endevours gives
+        me the same gratification as when I am developing and writing code. I
+        love nothing more than to dive in an obsess over a challenge that
+        engages the creative parts of my mind.
+      </p>
+      <h4 class="mx-5 my-3 py-3 text-end" id="about">Plays well with others</h4>
+      <p id="about">I'm looking forward to the opportunity to work within a team environment. I highly
+        value the collaborative environment that a the right team creates and how it sharpens the skills of all
+        involved.</p>
+      <h4 class="mx-5 my-3 py-3 text-end" id="about">Self motivated</h4>
+      <p id="about">I function well in both a team and independent environment. When we don't have the answers we need
+        to know how to find them.</p>
+      <div class="text-end">
+      </div>
+  </section>
 
   <div class="modal fade text-dark" id="contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="contactLabel" aria-hidden="true">
@@ -412,7 +398,7 @@
       </div>
     </div>
   </div>
-<!--PYSCRIPT-->
+  <!--PYSCRIPT-->
   <section id="pyscript" class="px-5 my-5">
     <h4 class="mx-5 mt-5 text-light">
       <py-env>
