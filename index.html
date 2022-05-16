@@ -37,7 +37,6 @@
 
   <!--jquery-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
   <link rel="stylesheet" href="./style.css" />
 
   <!-- toggle classes -->
@@ -63,7 +62,6 @@
   </script>
   <!--pyscript-->
   <script defer src="https://pyscript.net/alpha/pyscript.js"></script>
-
 </head>
 
 <body>
@@ -185,15 +183,18 @@
   <!--BILL PAYIN SKILLZ-->
   <section id="skills">
     <div class="container-fluid w-100 px-5">
-      <div class="justify-content-between mx-auto py-3 w-auto row">
-        <img src="./images/cs50.png" alt="cs50" class="svg" id='skillicon'>
+      <div class="row mb-5">
+        <h1 class="text-center" id="about">
+          Some of my tools
+        </h1>
+      </div>
+      <div class="justify-content-evenly mx-auto py-3 w-auto row">
 
         <img class="svg" id='skillicon' src="./images/python.svg" alt="python" />
 
         <img class="svg" id='skillicon' src="./images/bootstrap-brands.svg" alt="bootstrap" />
         <img class="svg" id='skillicon' src="./images/sqlite-icon.svg" alt="sqlite">
-      </div>
-      <div class="justify-content-between mx-auto py-3 w-auto row">
+
         <img class="svg" id='skillicon' src="./images/css3.svg" alt="css" />
 
         <img class="svg" id='skillicon' src="./images/html5.svg" alt="html" />
@@ -203,6 +204,9 @@
         <img class="svg" id='skillicon' src="./images/flask.svg" alt="flask" />
       </div>
     </div>
+    </div>
+
+
   </section>
 
   <!--cards-->
@@ -217,29 +221,29 @@
         <div class="col" id="modal">
           <a href="#" data-bs-toggle="modal" data-bs-target="#blankc">
             <img src="./images/blankc.jpg" alt="blankc guitars" id="portimg" />
-            <h4>
+            <p>
               BLANKC GUITARS
-            </h4>
+            </p>
           </a>
         </div>
         <div class="col" id="modal">
           <a href="#" data-bs-toggle="modal" data-bs-target="#immer">
             <img src="./images/immer.jpg" alt="immer" id="portimg" />
-            <h4>IMMER</h4>
+            <p>IMMER</p>
           </a>
         </div>
         <div class="col" id="modal">
           <a href="#" data-bs-toggle="modal" data-bs-target="#blackcat">
             <img src="./images/blackcatvinyl.jpg" alt="black cat vinyl" id="portimg" />
-            <h4>BLACK CAT VINYL</h4>
+            <p>BLACK CAT VINYL</p>
           </a>
         </div>
       </div>
     </div>
   </section>
 
-  <!--Modals-->
-  <div class="modal fade text-muted" id="blankc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <!--Project modals-->
+  <div class="modal fade text-dark" id="blankc" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="blankcLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -273,7 +277,7 @@
     </div>
   </div>
 
-  <div class="modal fade text-muted" id="immer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div class="modal fade text-dark" id="immer" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="immerLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -314,7 +318,7 @@
     </div>
   </div>
 
-  <div class="modal fade text-muted" id="blackcat" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div class="modal fade text-dark" id="blackcat" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="blackcatLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -353,9 +357,9 @@
  <section id="aboutme" class="mb-5">
   <div class="container-fluid w-75">
     <h1 class="text-center" id="about">About me</h1>
-    <h4 class="text-muted mx-5 mt-3" id="about">Creative</h4>
-    <p class="text-muted" id="about">
-      I'm creative, imaginative and slightly eccentric. I've spent my entire
+    <h4 class="mx-5 my-3 py-3 text-end" id="about">Creative</h4>
+    <p id="about">
+      I'm imaginative and mildly eccentric. I've spent much of my
       life creating. That has taken on forms such as writing and producing
       music, to building and modifying electronics. The passion that has
       wrapped up my attention for countless hours in those endevours gives
@@ -363,17 +367,17 @@
       love nothing more than to dive in an obsess over a challenge that
       engages the creative parts of my mind.
     </p>
-    <h4 class="text-muted mx-5 mt-5" id="about">Plays well with others</h4>
-    <p class="text-muted" id="about">I'm looking forward to the opportunity to work within a team environment. I highly
+    <h4 class="mx-5 my-3 py-3 text-end" id="about">Plays well with others</h4>
+    <p id="about">I'm looking forward to the opportunity to work within a team environment. I highly
       value the collaborative environment that a the right team creates and how it sharpens the skills of all
       involved.</p>
-    <h4 class="text-muted mx-5 mt-5" id="about">Self motivated</h4>
-    <p class="text-muted" id="about">I function well in both a team and independent environment. When we don't have the answers we need to know how to find them.</p>
+    <h4 class="mx-5 my-3 py-3 text-end" id="about">Self motivated</h4>
+    <p id="about">I function well in both a team and independent environment. When we don't have the answers we need to know how to find them.</p>
     <div class="text-end">
     </div>
 </section>
 
-  <div class="modal fade text-muted" id="contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  <div class="modal fade text-dark" id="contact" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="contactLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -408,13 +412,10 @@
       </div>
     </div>
   </div>
+<!--PYSCRIPT-->
   <section id="pyscript" class="px-5 my-5">
-
     <h4 class="mx-5 mt-5 text-light">
       <py-env>
-        from js import console
-        import sqlite3 as sql
-        from datetime import datetime
       </py-env>
       <py-script src="./gailen.py">
 

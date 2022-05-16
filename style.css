@@ -36,7 +36,9 @@ h3#subtitle {
     margin-top: 0;
 }
 
-
+p {
+    text-align: justify;
+}
 div#header {
     width: 100vw;
     height: 50vh;
@@ -141,7 +143,7 @@ svg.move {
 
 /*skills svg images*/
 img.svg {
-    width: 12vw;
+    width: 10vw;
     border-radius: 45px;
     opacity: .5;
     transition: opacity 300ms;
@@ -156,7 +158,6 @@ img.svg:hover {
     opacity: 1;
     animation: icon ease-in-out 300ms;
 }
-
 
 
 @keyframes icon {
@@ -174,8 +175,8 @@ img.svg:hover {
 
 /*portfolio images*/
 img#portimg {
-    width: 60vw;
-    border-radius: 25px;
+    width: 20vw;
+    border-radius: 10px;
 }
 
 #portimg:hover {
@@ -259,6 +260,11 @@ footer {
         position: fixed;
         top: -16px;
         width: 100vw;
+    }
+    img.svg {
+        width: 20vw;
+        margin-top: 24px;
+    
     }
   }
   .pop-wrapper {
