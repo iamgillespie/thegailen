@@ -65,6 +65,34 @@ section {
 
 /* LIGHT BULB STUFF*/
 
+div#bulbcounter {
+    filter: drop-shadow(1px 1px 20px #00000050);
+    font-size: 38px;
+    margin: 0;
+    position: fixed;
+    top: 50%;
+    text-align: center;
+    width: 100vw;
+}
+div.hide {
+    display: none;
+}
+div.fade#bulbcounter {
+    animation: bulbcounter ease-out 3s;
+}
+
+@keyframes bulbcounter {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 #bulb-container {
     position: absolute;
     top: 0;
@@ -82,7 +110,7 @@ svg#bulb {
 }
 
 svg.move {
-    animation: bulb 4s;
+    animation: bulb 3s;
     transform-origin: top;
 }
 
@@ -292,8 +320,4 @@ footer {
   }
   .pop-message {
     text-align: center;
-  }
-
-  .text-muted:hover {
-
   }
