@@ -58,7 +58,7 @@ def lightbulb(self):
     if counter <3:
         Element('bulbcounter').element.innerText = counter
     else:
-        randstr = [counter, counter, counter, counter, 'please stop clicking and look at the portfolio', counter, counter, counter, counter, "I'm gald you're enjoying this lightbulb", counter, counter, 'Please be careful not to break the bulb', counter, counter, counter, counter, counter, counter, '...blinded by the light...', counter, counter, counter, 'did you know that Blinded by the Light was actually written by Springsteen?']
+        randstr = [counter, counter, counter, counter, 'please stop clicking and look at the portfolio', counter, counter, counter, counter, "I'm gald you're enjoying this lightbulb", counter, counter, 'Please be careful not to break the bulb', counter, counter, counter, counter, counter, counter, 'Do you think this is a bit overkill for a darkmode switch?', counter, counter, counter, counter, counter, counter, '...blinded by the light...', counter, counter, 'The lights are on but nobody is home...', counter, counter, counter, counter, 'did you know that Blinded by the Light was actually written by Springsteen?']
         Element('bulbcounter').element.innerText = random.choice(randstr)
 
     console.log(counter)

@@ -66,13 +66,15 @@ section {
 /* LIGHT BULB STUFF*/
 
 div#bulbcounter {
-    filter: drop-shadow(1px 1px 20px #00000050);
-    font-size: 38px;
+    filter: drop-shadow(1px 1px 10px #00000050);
+    font-size: 24px;
     margin: 0;
     position: fixed;
     top: 50%;
     text-align: center;
     width: 100vw;
+    padding: 32px;
+    background-color: #1f1f1f;
 }
 div.hide {
     display: none;
