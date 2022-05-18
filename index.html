@@ -383,9 +383,10 @@
 
           <!--PYSCRIPT CONTACT FORM-->
           <div id="pydiv">
-            <input required type="text" id="name" class="form-control" placeholder="name"><br>
-            <input required type="email" id="email" class="form-control" placeholder="email"><br>
-            <input type="tel" id="phone" class="form-control" placeholder="phone (optional)"><br>
+            <form action="https://formsubmit.co/gailen.gillespie@email.com" method="POST">
+            <input required type="text" id="name" name="name" class="form-control" placeholder="name"><br>
+            <input required type="email" id="email" name="email" class="form-control" placeholder="email"><br>
+            <input type="tel" name="tel" id="phone" class="form-control" placeholder="phone (optional)"><br>
             <textarea required name="message" id="message" class="form-control" rows="5"
               placeholder="message"></textarea><br>
           </div>
@@ -401,6 +402,7 @@
             <button type="button" class="btn btn-outline-primary mx-3" id="submit">
               Send
             </button>
+          </form>
           </div>
         </div>
       </div>

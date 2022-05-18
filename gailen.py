@@ -1,5 +1,8 @@
 from js import console, fetch
+
 import sqlite3 as sql
+import csv
+
 from datetime import datetime
 import random
 
@@ -40,8 +43,15 @@ def getthethings(*args):
     messageinfo.element.innerText = 'Message: ' '\n' + messageout
     div.element.appendChild(messageinfo.element)
 
-#    con = sql.connect('./gailen.db')
-#    cur = con.cursor()
+
+    con = sql.connect('./gailen.db')
+    cur = con.cursor()
+
+    cur.execute('SELECT * FROM msgs')
+    result = cur.fetchall()
+    console.log(result)
+
+
 #
 #    con.execute('INSERT INTO msgs (name, email, phone, message, timestamp) VALUES (?, ?, ?, ?, ?)', (nameout, emailout, phoneout, messageout, timestamp))
 #    con.commit()
