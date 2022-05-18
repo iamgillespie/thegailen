@@ -44,12 +44,12 @@ def getthethings(*args):
     div.element.appendChild(messageinfo.element)
 
 
-    con = sql.connect('./gailen.db')
-    cur = con.cursor()
-
-    cur.execute('SELECT * FROM msgs')
-    result = cur.fetchall()
-    console.log(result)
+#    con = sql.connect('./gailen.db')
+#    cur = con.cursor()
+#
+#    cur.execute('SELECT * FROM msgs')
+#    result = cur.fetchall()
+#    console.log(result)
 
 
 #
@@ -74,5 +74,5 @@ def lightbulb(self):
     console.log(counter)
 
 
-button.element.onclick = getthethings
+#button.element.onclick = getthethings
 bulb.element.onclick = lightbulb
