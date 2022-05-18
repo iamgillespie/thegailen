@@ -57,5 +57,5 @@ def lightbulb(self):
     console.log(counter)
 
 
-button.element.onclick = getthethings
+#button.element.onclick = getthethings
 bulb.element.onclick = lightbulb
