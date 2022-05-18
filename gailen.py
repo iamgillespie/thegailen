@@ -1,8 +1,4 @@
 from js import console, fetch
-
-import sqlite3 as sql
-import csv
-
 from datetime import datetime
 import random
 
@@ -61,5 +57,5 @@ def lightbulb(self):
     console.log(counter)
 
 
-#button.element.onclick = getthethings
+button.element.onclick = getthethings
 bulb.element.onclick = lightbulb
