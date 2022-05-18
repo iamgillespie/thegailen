@@ -1,8 +1,9 @@
-
 body {
     background-color: rgb(29, 29, 29);
     color: #fff;
     font-family: 'Red Hat Display', sans-serif;
+    padding: 0;
+    margin: 0;
 }
 
 /*dark mode switch */
@@ -40,10 +41,8 @@ p {
     text-align: justify;
 }
 div#header {
-    width: 100vw;
+    width: 95vw;
     height: 50vh;
-    padding-left: 25vw;
-    padding-right: 25vw;
     margin-bottom: 20vmin;
 }
 
@@ -249,6 +248,7 @@ footer {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
+
 }
 
 @media only screen and (max-width: 500px) {
