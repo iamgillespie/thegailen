@@ -19,30 +19,30 @@ div = Element('pydiv')
     #<div class="pydiv"> for lightbulb counter
 bulbcounter = Element('bulbcounter')
 counter = 0
-def getthethings(*args):
-    #console.log('button was clicked')
-    timestamp = datetime.timestamp(datetime.now())
-    nameout = name.element.value
-    emailout = email.element.value
-    phoneout = phone.element.value
-    messageout = message.element.value
-
-    confirmation = create("div", classes='output text-center alert alert-info fade show')
-    confirmation.element.innerText = 'Your message has been sent.'
-    div.element.appendChild(confirmation.element)
-
-    userinfo = create("div", classes='output text-center alert alert-primary fade show')
-    userinfo.element.innerText = nameout + '\n' + emailout + '\n' + phoneout
-    div.element.appendChild(userinfo.element)
-
-    messageinfo = create("div", classes='output alert alert-primary fade show')
-    messageinfo.element.innerText = 'Message: ' '\n' + messageout
-    div.element.appendChild(messageinfo.element)
-
-    name.clear()
-    email.clear()
-    phone.clear()
-    message.clear()
+#def getthethings(*args):
+#    #console.log('button was clicked')
+#    timestamp = datetime.timestamp(datetime.now())
+#    nameout = name.element.value
+#    emailout = email.element.value
+#    phoneout = phone.element.value
+#    messageout = message.element.value
+#
+#    confirmation = create("div", classes='output text-center alert alert-info fade show')
+#    confirmation.element.innerText = 'Your message has been sent.'
+#    div.element.appendChild(confirmation.element)
+#
+#    userinfo = create("div", classes='output text-center alert alert-primary fade show')
+#    userinfo.element.innerText = nameout + '\n' + emailout + '\n' + phoneout
+#    div.element.appendChild(userinfo.element)
+#
+#    messageinfo = create("div", classes='output alert alert-primary fade show')
+#    messageinfo.element.innerText = 'Message: ' '\n' + messageout
+#    div.element.appendChild(messageinfo.element)
+#
+#    name.clear()
+#    email.clear()
+#    phone.clear()
+#    message.clear()
 
 def lightbulb(self):
     global counter
@@ -56,6 +56,5 @@ def lightbulb(self):
 
     console.log(counter)
 
-
-#button.element.onclick = getthethings
 bulb.element.onclick = lightbulb
+#button.element.onclick = getthethings
