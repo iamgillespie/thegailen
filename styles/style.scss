@@ -65,14 +65,12 @@ section {
 /* LIGHT BULB STUFF*/
 
 div#bulbcounter {
-    filter: drop-shadow(1px 1px 10px #00000010);
-    font-size: 24px;
+    font-size: 12px;
     margin: 0;
     position: fixed;
     top: 50%;
     text-align: center;
-    width: 100vw;
-    padding: 32px;
+    width: 50vw;
     background-color: inherit;
 }
 div.hide {
@@ -98,7 +96,7 @@ div.fade#bulbcounter {
     position: absolute;
     top: 0;
     left: 0;
-    width: 75vw;
+    width: 25vw;
     text-align: center;
 }
 
@@ -198,13 +196,11 @@ img.svg {
     100% {
         filter: blur(0px);
     }
-    
 }
 
 /*portfolio images*/
 img#portimg {
     width: 20vw;
-    border-radius: 10px;
 }
 
 #portimg:hover {
@@ -244,10 +240,8 @@ img#portimg {
 footer {
     z-index: 99 !important;
     background-color: inherit;
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
-
 }
 
 @media only screen and (max-width: 500px) {
