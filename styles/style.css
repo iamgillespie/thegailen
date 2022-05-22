@@ -42,7 +42,7 @@ p {
 }
 
 div#header {
-  width: 95vw;
+  width: 90vw;
   height: 50vh;
   margin-bottom: 20vmin;
 }
@@ -74,8 +74,20 @@ div.hide {
 }
 
 div.fade#bulbcounter {
+  position: fixed;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: large;
+  text-align: center;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   -webkit-animation: bulbcounter ease-out 3s;
           animation: bulbcounter ease-out 3s;
+  border-radius: 15px;
 }
 
 @-webkit-keyframes bulbcounter {
@@ -468,5 +480,10 @@ div#emailsent {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+}
+
+section#skills {
+  min-height: 50vh;
+  padding-top: 15%;
 }
 /*# sourceMappingURL=style.css.map */
