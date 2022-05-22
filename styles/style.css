@@ -70,15 +70,12 @@ section {
 
 /* LIGHT BULB STUFF*/
 div#bulbcounter {
-  -webkit-filter: drop-shadow(1px 1px 10px #00000010);
-          filter: drop-shadow(1px 1px 10px #00000010);
-  font-size: 24px;
+  font-size: 12px;
   margin: 0;
   position: fixed;
   top: 50%;
   text-align: center;
-  width: 100vw;
-  padding: 32px;
+  width: 50vw;
   background-color: inherit;
 }
 
@@ -119,7 +116,7 @@ div.fade#bulbcounter {
   position: absolute;
   top: 0;
   left: 0;
-  width: 75vw;
+  width: 25vw;
   text-align: center;
 }
 
@@ -319,7 +316,6 @@ img.svg:hover {
 /*portfolio images*/
 img#portimg {
   width: 20vw;
-  border-radius: 10px;
 }
 
 #portimg:hover {
