@@ -77,13 +77,14 @@ div.fade#bulbcounter {
     padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
-    font-size: large;
+    font-size: xx-large;
     text-align: center;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    animation: bulbcounter ease-out 3s;
-    border-radius: 15px;
+    animation: bulbcounter ease-in-out 3s;
+    border-radius: 50%;
+    background-color: inherit;
 }
 
 @keyframes bulbcounter {
