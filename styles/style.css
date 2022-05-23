@@ -570,8 +570,8 @@ div#about-div {
   border-bottom-left-radius: 200px;
   padding: 5%;
   background: rgba(166, 211, 248, 0.041);
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.103);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.103);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.062);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.062);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
 }
