@@ -1,6 +1,9 @@
 body {
-    background-color: rgb(29, 29, 29);
-    color: rgba(255, 255, 255, 0.603);
+    background: radial-gradient(circle, rgb(16, 11, 22) 0%, rgba(15, 10, 10, 1) 20%, rgba(0, 0, 0, 0.9640231092436975) 62%, rgba(0, 0, 0, 0.9556197478991597) 96%);
+    background-size: 120%;
+    background-position: right;
+    background-attachment: fixed;
+    color: rgba(255, 255, 255, 0.849);
     font-family: 'Red Hat Display', sans-serif;
     padding: 0;
     margin: 0;
@@ -8,8 +11,10 @@ body {
 
 /*dark mode switch */
 .lightswitch {
-    background-color: rgb(250, 250, 250);
-    color: rgb(0, 0, 0);
+    background: rgb(255, 245, 211);
+    background: radial-gradient(circle, rgba(197, 174, 238, 0.199) 0%, rgba(244, 236, 218, 0.6222864145658263) 46%);
+    background-attachment: fixed;
+    color: rgba(0, 0, 0, 0.808);
 }
 
 a {
@@ -18,7 +23,12 @@ a {
 }
 
 a:hover {
-    color: rgb(131, 131, 131);
+    color: rgb(52, 90, 107);
+}
+
+hr {
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.199);
 }
 
 h1#title {
@@ -34,13 +44,14 @@ h2#gillespie {
     text-align: center;
     font-size: 150px;
 }
+
 h3#subtitle {
     margin-top: -45px;
     text-align: right;
     font-size: 38px;
     font-weight: 100;
-    color: #d8d8d8;
 }
+
 div#name {
     margin: auto;
     width: fit-content;
@@ -49,6 +60,7 @@ div#name {
 p {
     text-align: justify;
 }
+
 div#header {
     justify-content: center;
     width: 100%;
@@ -71,29 +83,26 @@ div#modal:hover {
 div.hide {
     display: none;
 }
+
 div.fade#bulbcounter {
-    position: fixed;
-    padding-left: 30px;
-    padding-right: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
     font-size: xx-large;
     text-align: center;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    width: 100%;
     animation: bulbcounter ease-in-out 3s;
-    border-radius: 50%;
-    background-color: inherit;
+    border-radius: 15px;
 }
 
 @keyframes bulbcounter {
     0% {
         opacity: 0;
     }
+
     50% {
         opacity: 1;
     }
+
     100% {
         opacity: 0;
     }
@@ -104,27 +113,6 @@ div.fade#bulbcounter {
     top: 0;
     width: 80vw;
     text-align: right;
-  }
-  
-h1#title {
-    margin-top: 20vh;
-    margin-bottom: 0;
-    padding-bottom: 0;
-    text-align: left;
-    font-size: 150px;
-}
-
-h2#gillespie {
-    margin-top: -70px;
-    text-align: center;
-    font-size: 150px;
-}
-h3#subtitle {
-    margin-top: -45px;
-    text-align: right;
-    font-size: 38px;
-    font-weight: 100;
-    color: #d8d8d8;
 }
 
 svg#bulb {
@@ -200,9 +188,10 @@ img.svg {
     width: 7vw;
     opacity: .6;
     transition: opacity 600ms;
+
     &:hover {
-    opacity: 1;
-    animation: icon ease-in-out 300ms;        
+        opacity: 1;
+        animation: icon ease-in-out 300ms;
     }
 }
 
@@ -216,9 +205,11 @@ img.svg {
     0% {
         filter: blur(0px);
     }
+
     10% {
         filter: blur(1.5px);
     }
+
     100% {
         filter: blur(0px);
     }
@@ -227,8 +218,8 @@ img.svg {
 /*portfolio images*/
 
 div#description {
-height: fit-content;
-align-self: center;
+    height: fit-content;
+    align-self: center;
 }
 
 img#portimg {
@@ -244,13 +235,15 @@ img#portimg {
     0% {
         filter: blur(0px);
     }
+
     10% {
         filter: blur(2px);
     }
+
     100% {
         filter: blur(0px);
     }
-    
+
 }
 
 #about:hover {
@@ -261,37 +254,42 @@ img#portimg {
     0% {
         opacity: 1;
     }
+
     10% {
         opacity: .8;
     }
+
     100% {
         opacity: 1;
     }
-    
+
 }
 
 footer {
     z-index: 99 !important;
     position: sticky;
     background: rgba(166, 211, 248, 0);
-    backdrop-filter: blur(50px);
+    backdrop-filter: blur(15px);
     padding: 5px;
     top: 0;
 }
 
 @media only screen and (max-width: 900px) {
     svg#bulb {
-        height: 60vh;
+        height: 270px;
         margin-top: 8vh;
     }
+
     div#bulb-container {
         width: 100vw;
         text-align: center;
     }
+
     section {
         margin-left: 0;
         margin-right: 0;
     }
+
     h1#title {
         margin-top: 40vh;
         margin-bottom: 0;
@@ -299,26 +297,30 @@ footer {
         text-align: center;
         font-size: 50px;
     }
-    
+
     h2#gillespie {
         margin-top: -20px;
         text-align: center;
         font-size: 50px;
     }
+
     h3#subtitle {
         margin-top: -20px;
         text-align: center;
         font-size: 14px;
         font-weight: 100;
-        color: #d8d8d8;
     }
+
     div#name {
         margin: 0px;
         width: 100%;
     }
-    html, body {
+
+    html,
+    body {
         overflow-x: hidden;
-      }
+    }
+
     footer {
         margin-top: 100px;
         padding-top: 20px;
@@ -326,78 +328,121 @@ footer {
         top: -16px;
         width: 100vw;
     }
+
     img.svg {
         width: 20vw;
         margin-top: 24px;
     }
-  }
-  .pop-wrapper {
+
+    #portimg {
+        align-self: center;
+        margin-right: 100vw;
+    }
+}
+
+.pop-wrapper {
     position: relative;
     display: inline-block;
     text-align: center;
     height: 0px;
-  }
+}
 
-  .pop-content {
+.pop-content {
     opacity: 0;
     visibility: hidden;
     position: relative;
     padding: 0;
     margin: 0;
-  }
-  .pop-content:before {
+}
+
+.pop-content:before {
     transition-duration: 0.3s;
     transition-property: transform;
-  }
-  .pop-wrapper:hover .pop-content {
+}
+
+.pop-wrapper:hover .pop-content {
     opacity: 1;
     visibility: visible;
     transition: all 0.5s cubic-bezier(0.75, -0.02, 0.2, 0.97);
-  }
-  .pop-message {
-    text-align: center;
-  }
+}
 
-  div#emailsent {
+.pop-message {
+    text-align: center;
+}
+
+div#emailsent {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+}
 
 section#top {
-    min-height: 70vh;
+    min-height: 65vh;
     max-height: 100vh;
 }
 
+div#gradient-overlay {
+    background: linear-gradient(0deg, rgba(185, 152, 111, 0) 0%, rgba(111, 182, 185, 0.829) 60%, rgba(165, 71, 255, 0) 85%);
+    background-attachment: fixed;
+}
+
 section#skills {
-    background: linear-gradient(180deg, rgba(185, 152, 111, 0) 0%, rgba(111, 182, 185, 0.11) 60%, rgba(165,71,255,0) 85%);
     min-height: 50vh;
 }
 
 section#portfolio {
+    margin-top: 5vh;
     min-height: 100vh;
-    background: linear-gradient(180deg, rgba(185, 152, 111, 0) 0%, rgba(185,152,111,0.18951330532212884) 20%, rgba(165,71,255,0) 55%);
+    background: linear-gradient(180deg, rgba(185, 152, 111, 0) 0%, rgba(85, 69, 104, 0.041) 20%, rgba(165, 71, 255, 0) 55%);
 }
+
+div.portfolio {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+    background: rgba(166, 211, 248, 0.005);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(4px);
+    padding: 5%;
+    max-width: 80vw;
+}
+
 section#aboutme {
     min-height: fit-content;
     font-size: large;
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-bottom: 30vh;
-    background: linear-gradient(180deg, rgba(185,152,111,0) 0%, rgba(109, 68, 196, 0.055) 57%, rgba(0,0,0,0) 100%);
+    padding-bottom: 10vh;
 }
 
 div#skills-container {
-margin-top: 25vh;
+    margin-top: 25vh;
+    display: flex;
+    justify-content: center;
 }
+
+div#skill-bg {
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2vw;
+    background: rgba(166, 211, 248, 0.005);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(4px);
+    width: 80vw;
+    height: 30vh;
+}
+
 div#about-div {
-    border-top-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 200px;
-    border-bottom-left-radius: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
     padding: 5%;
-    background: rgba(166, 211, 248, 0.041);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.062);
-    backdrop-filter: blur(10px);
+    background: rgba(166, 211, 248, 0.005);
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
+    backdrop-filter: blur(4px);
 }
