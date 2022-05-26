@@ -185,9 +185,10 @@ svg.move {
 
 /*skills svg images*/
 img.svg {
-    width: 7vw;
+    width: 80px;
     opacity: .6;
     transition: opacity 600ms;
+    padding: 5px;
 
     &:hover {
         opacity: 1;
@@ -388,60 +389,44 @@ div#gradient-overlay {
 }
 
 section#portfolio {
+    margin-left: 4vw;
+    margin-right: 4vw;
     margin-top: 5vh;
     min-height: 100vh;
     background: linear-gradient(180deg, rgba(185, 152, 111, 0) 0%, rgba(85, 69, 104, 0.041) 20%, rgba(165, 71, 255, 0) 55%);
 }
 
 div.portfolio {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 50px;
+    border-radius: 5px;
     background: rgba(166, 211, 248, 0.005);
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
     backdrop-filter: blur(4px);
     padding: 5%;
-    max-width: 80vw;
+
 }
 
 section#aboutme {
+    margin-left: 4vw;
+    margin-right: 4vw;
     min-height: fit-content;
     font-size: large;
-    padding-left: 10vw;
-    padding-right: 10vw;
     display: flex;
 }
 div#about-div {
-    border-top-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top-right-radius: 100px;
-    border-bottom-left-radius: 50px;
+    border-radius: 5px;
     padding: 5%;
-    background: rgba(166, 211, 248, 0.005);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(4px);
 }
 
 section#skills {
-margin-top: 10vh;
-margin-bottom: 10vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
 }
 
 div#skills-container {
     display: flex;
+    width: 100%;
     justify-content: center;
-}
-
-div#skill-bg {
-    border-top-left-radius: 100px;
-    border-bottom-right-radius: 50px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 2vw;
-    background: rgba(166, 211, 248, 0.005);
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
-    backdrop-filter: blur(4px);
-    width: fit-content;
-    height: fit-content;
+    text-align: center;
 }

@@ -278,10 +278,11 @@ svg.move {
 
 /*skills svg images*/
 img.svg {
-  width: 7vw;
+  width: 80px;
   opacity: .6;
   -webkit-transition: opacity 600ms;
   transition: opacity 600ms;
+  padding: 5px;
 }
 
 img.svg:hover {
@@ -529,6 +530,8 @@ div#gradient-overlay {
 }
 
 section#portfolio {
+  margin-left: 4vw;
+  margin-right: 4vw;
   margin-top: 5vh;
   min-height: 100vh;
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(185, 152, 111, 0)), color-stop(20%, rgba(85, 69, 104, 0.041)), color-stop(55%, rgba(165, 71, 255, 0)));
@@ -536,45 +539,35 @@ section#portfolio {
 }
 
 div.portfolio {
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 50px;
+  border-radius: 5px;
   background: rgba(166, 211, 248, 0.005);
   -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
           box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   padding: 5%;
-  max-width: 80vw;
 }
 
 section#aboutme {
+  margin-left: 4vw;
+  margin-right: 4vw;
   min-height: -webkit-fit-content;
   min-height: -moz-fit-content;
   min-height: fit-content;
   font-size: large;
-  padding-left: 10vw;
-  padding-right: 10vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
 div#about-div {
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 50px;
+  border-radius: 5px;
   padding: 5%;
-  background: rgba(166, 211, 248, 0.005);
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
 }
 
 section#skills {
+  margin-left: 4vw;
+  margin-right: 4vw;
   margin-top: 10vh;
   margin-bottom: 10vh;
 }
@@ -583,27 +576,10 @@ div#skills-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 100%;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-div#skill-bg {
-  border-top-left-radius: 100px;
-  border-bottom-right-radius: 50px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
-  padding: 2vw;
-  background: rgba(166, 211, 248, 0.005);
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
