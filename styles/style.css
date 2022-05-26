@@ -1,5 +1,5 @@
 body {
-  background: radial-gradient(circle, #100b16 0%, #0f0a0a 20%, rgba(0, 0, 0, 0.964023) 62%, rgba(0, 0, 0, 0.95562) 96%);
+  background: radial-gradient(circle, #100c14 0%, #0f0a0a 20%, rgba(0, 0, 0, 0.964023) 62%, rgba(0, 0, 0, 0.95562) 96%);
   background-size: 120%;
   background-position: right;
   background-attachment: fixed;
@@ -12,7 +12,7 @@ body {
 /*dark mode switch */
 .lightswitch {
   background: #fff5d3;
-  background: radial-gradient(circle, rgba(197, 174, 238, 0.199) 0%, rgba(244, 236, 218, 0.622286) 46%);
+  background: radial-gradient(circle, rgba(197, 174, 238, 0.199) 0%, rgba(244, 236, 218, 0.288) 46%);
   background-attachment: fixed;
   color: rgba(0, 0, 0, 0.808);
 }
@@ -528,10 +528,6 @@ div#gradient-overlay {
   background-attachment: fixed;
 }
 
-section#skills {
-  min-height: 50vh;
-}
-
 section#portfolio {
   margin-top: 5vh;
   min-height: 100vh;
@@ -545,8 +541,8 @@ div.portfolio {
   border-top-right-radius: 100px;
   border-bottom-left-radius: 50px;
   background: rgba(166, 211, 248, 0.005);
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   padding: 5%;
@@ -560,11 +556,30 @@ section#aboutme {
   font-size: large;
   padding-left: 10vw;
   padding-right: 10vw;
-  padding-bottom: 10vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+div#about-div {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-top-right-radius: 100px;
+  border-bottom-left-radius: 50px;
+  padding: 5%;
+  background: rgba(166, 211, 248, 0.005);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+  -webkit-backdrop-filter: blur(4px);
+          backdrop-filter: blur(4px);
+}
+
+section#skills {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
 }
 
 div#skills-container {
-  margin-top: 25vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -580,8 +595,8 @@ div#skill-bg {
   border-bottom-left-radius: 20px;
   padding: 2vw;
   background: rgba(166, 211, 248, 0.005);
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
+          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.05);
   -webkit-backdrop-filter: blur(4px);
           backdrop-filter: blur(4px);
   width: -webkit-fit-content;
@@ -590,18 +605,5 @@ div#skill-bg {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
-}
-
-div#about-div {
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-top-right-radius: 100px;
-  border-bottom-left-radius: 50px;
-  padding: 5%;
-  background: rgba(166, 211, 248, 0.005);
-  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
-          box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.199);
-  -webkit-backdrop-filter: blur(4px);
-          backdrop-filter: blur(4px);
 }
 /*# sourceMappingURL=style.css.map */
