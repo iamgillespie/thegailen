@@ -583,3 +583,28 @@ div#skills-container {
   text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
+
+/* Your element with the initial opacity and animation */
+p#hint {
+    text-align: center;
+    animation: fadeOut 10s ease-in-out forwards; /* 5s is the duration of the animation */
+}
+
+/* Keyframes for the fade-out animation */
+@keyframes fadeOut {
+    0% {
+        opacity: .3; /* Start with initial opacity */
+    }
+
+    30% {
+        opacity: 1; /* Start with initial opacity */
+    }
+
+    90% {
+        opacity: .3; /* Maintain opacity for most of the animation */
+    }
+
+    100% {
+        opacity: 0; /* Fade to 0 opacity at the end */
+    }
+}
