@@ -217,6 +217,24 @@
       </div>
       <div class="row">
         <div class="col" id="modal">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#blog">
+            <img src="./images/blog.jpg" alt="Gailen blogs" id="portimg" />
+          </a>
+        </div>
+        <div class="col" id="description">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#blog">
+            <h3 class="text-center">GAILEN BLOGS</h5>
+          </a>
+          <p>A basic blog.</p>
+          <p>A blog built with Django and Tailwinds.</p>
+          <hr>
+          <p class="text-center py-3 text-muted">Built with Python, SQLite, Django, Tailwinds, CSS and JavaScript
+          </p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col" id="modal">
           <a href="#" data-bs-toggle="modal" data-bs-target="#blackcat">
             <img src="./images/blackcatvinyl.jpg" alt="black cat vinyl" id="portimg" />
           </a>
@@ -244,7 +262,7 @@
         </div>
         <div class="col" id="description">
           <a href="#" data-bs-toggle="modal" data-bs-target="#retroscan">
-            <h3 class="text-center">Retro Scan Weather</h5>
+            <h3 class="text-center">RETRO SCAN WEATHER</h5>
           </a>
           <p>A weather forecast app with a fun retro mode button built with Vue.js</p>
           <p>Forecasts are queried using the NWS API.</p>
@@ -332,6 +350,33 @@
     </div>
   </div>
 
+  <div class="modal fade text-dark" id="blog" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="blog" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="blog">Gailen blogs</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/blog.jpg" class="img-fluid" alt="Gailen blogs" />
+        <p>
+          This is a blog that I build using the Django framework and tailwinds.  It occasionally post here from time to time a means of journaling my experience and progress as I learn more about about programming and development.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn" href="https://gailenblog.pythonanywhere.com/" target="_blank">
+          <i class="bi fs-2 bi-link"></i>
+        </a>
+        <button type="button" class="btn" data-bs-dismiss="modal">
+          <i class="bi fs-2 bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+
   <div class="modal fade text-dark" id="blackcat" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
     aria-labelledby="blackcatLabel" aria-hidden="true">
     <div class="modal-dialog">
@@ -404,17 +449,25 @@
           <h1 class="text-center" id="about">
             Tools
           </h1>
+          <p class="opacity-50">A collection of tools that I have worked with.</p>
         </div>
         <div id="skill-icons">
           <img class="svg" id='skillicon' src="./images/python.svg" alt="python" />
           <img class="svg" id='skillicon' src="./images/flask.svg" alt="flask" />
+          <img class="svg" id='skillicon' src="./images/django.svg" alt="Django" />
+          <img class="svg" id="skillicon" src="./images/dotnet.svg" alt=".NET" />
+          <img class="svg" id="skillicon" src="./images/blazor.svg" alt="Blazor" />
           <img class="svg" id='skillicon' src="./images/bootstrap-brands.svg" alt="bootstrap" />
-          <img class="svg" id='skillicon' src="./images/sqlite-icon.svg" alt="sqlite">
+          <img class="svg" id='skillicon' src="./images/tailwinds.svg" alt="tailwinds" />
           <img class="svg" id='skillicon' src="./images/css3.svg" alt="css" />
           <img class="svg" id='skillicon' src="./images/Sass.svg" alt="sass">
           <img class="svg" id='skillicon' src="./images/html5.svg" alt="html" />
           <img class="svg" id='skillicon' src="./images/jquery.svg" alt="jquery">
           <img class="svg" id='skillicon' src="./images/javascript.svg" alt="javascript" />
+          <img class="svg" id="skillicon" src="./images/Vue.svg" alt="Vue.js" />
+          <img class="svg" id='skillicon' src="./images/sql.svg" alt="SQL" />
+          <img class="svg" id='skillicon' src="./images/plsql.svg" alt="PL SQL" />
+          <img class="svg" id='skillicon' src="./images/VB.svg" alt="Visual Basic" />
         </div>
       </div>
     </div>
@@ -423,9 +476,9 @@
   <!--about me-->
   <section id="aboutme" class="mb-5">
     <div class="container-fluid w-100" id="about-div">
-      <h1 class="text-center p-2" id="about">About Me</h1>
-      <h4 class="my-3 py-3" id="about">I'm a creative self-starter who plays well with others.</h4>
-      <p id="about">
+      <h1 class="display-1" id="about">About Me</h1>
+      <h4 class="display-5" id="about">I'm a creative self-starter who plays well with others.</h4>
+      <p id="about" class="lead">
         I've spent much of my life creating, from writing and producing music to building and modifying electronics.
         I’ve discovered the same creative gratification from developing and writing code. I love nothing more than
         diving into a challenge that stimulates my mind and endlessly occupies my attention. I am adaptable and function
