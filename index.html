@@ -236,6 +236,25 @@
         </div>
       </div>
       <div class="row">
+
+        <div class="col" id="modal">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#retroscan">
+            <img src="./images/retroscan.jpg" alt="black cat vinyl" id="portimg" />
+          </a>
+        </div>
+        <div class="col" id="description">
+          <a href="#" data-bs-toggle="modal" data-bs-target="#retroscan">
+            <h3 class="text-center">Retro Scan Weather</h5>
+          </a>
+          <p>A weather forecast app with a fun retro mode button built with Vue.js</p>
+          <p>Forecasts are queried using the NWS API.</p>
+          <p>JSON data returned from the API call is displayed in a bootstrap carousel above an image of a national radar map. Click the retro mode icon in the bottom right if you want nostalgia of 90's Weather Channel.</p>
+          <hr>
+          <p class="text-center py-3 text-muted">Tools used include Vue.js, Bootstrap and the NWS API.
+          </p>
+        </div>
+      </div>
+
       </div>
     </div>
   </section>
@@ -291,7 +310,7 @@
             intermediate language levels when they may not have a robust
             vocabulary to find content on their own yet.
           </p>
-          <p><i>Essayez-le ! J'espère que vous aimes!</i></p>
+          <p><i>Essayez-le ! J'espère que vous l'aimez!</i></p>
           <p>
             This is a project I intend to keep growing and I also hope to
             create a few more like it as what might be described as a language
@@ -345,6 +364,38 @@
     </div>
   </div>
 </div>
+
+  <div class="modal fade text-dark" id="retroscan" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+  aria-labelledby="retroscanLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="retroscanLabel">RetroScan Weather</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./images/retroscan.jpg" class="img-fluid" alt="Retro Scan Weather" />
+        <p>
+          RetroScan Weather is an app that I recently put together over a couple days to learn the Vue.js framework.  It makes requests to the National Weather Service API and displays it. 
+          A fun feature I included is a retro mode button. 
+          This displays a static effect over the forecast and triggers audio extracted from an old cassette tape to give you the feeling that you are watching forecats from the 90s version of The Weather Channel.
+        </p>
+      </div>
+      <div class="modal-footer">
+        <a type="button" class="btn" href="https://retroscan.vercel.app/" target="_blank">
+          <i class="bi fs-2 bi-link"></i>
+        </a>
+        <button type="button" class="btn" data-bs-dismiss="modal">
+          <i class="bi fs-2 bi-x-lg"></i>
+        </button>
+      </div>
+    </div>
+  </div>
+  </div>
+  </div>
+
+
+
   <!--BILL PAYIN SKILLZ-->
   <section id="skills">
     <div class="container-fluid" id="skills-container">
